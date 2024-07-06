@@ -1,8 +1,8 @@
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (
-    <main>
-      Landing Page!
-    </main>
+    <div>
+    </div>
   );
 }
