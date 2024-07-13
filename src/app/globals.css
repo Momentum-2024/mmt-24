@@ -1,4 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+.hero-bg{
+    background: url("/hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-txt{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 655;
+    font-style: normal;
+}
+
+.montserrat-light{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.footer-bg{
+    background: url("/footer-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #030919;
+    /* display: none; */
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 7px;
+    display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dcd7ff; 
+    border-radius: 1rem;
+}

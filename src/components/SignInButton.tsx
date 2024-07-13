@@ -1,21 +1,56 @@
 'use client'
-import React from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
+import { useState } from "react";
+import { LiaSignOutAltSolid } from "react-icons/lia";
+import { MdOutlineEmojiEvents } from "react-icons/md";
 
 function SignInButton() {
   const { data: session } = useSession();
+  const [show,setShow]= useState(false);
+
+  window.addEventListener('click',()=>{
+    setShow(false);
+  })
+
   if (session && session.user) {
     return (
-      <div className="flex gap-4 ml-auto">
-        <p className="text-sky-600">{session.user.name}</p>
-        <button onClick={()=> signOut()} className="text-red-600">
-          Sign Out
-        </button>
+      <div className="flex flex-col  ml-auto items-center">
+        <img src={session.user.image || ""} alt="" className="rounded-[50%] h-9 w-9 cursor-pointer" 
+          onMouseOver={()=>{
+            setShow(true);
+          }}
+        />
+        {
+          show &&
+          <div className="w-34 absolute flex flex-col mt-12 bg-white text-black rounded-sm px-1 py-2 space-y-1 text-sm font-thin"
+            onClick={()=>{
+              setShow(true);
+            }}
+            onMouseLeave={()=>{
+              setShow(false)
+            }}
+          >
+            <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200"
+
+            >
+              <MdOutlineEmojiEvents size={14}/>
+              <button >My Events</button> 
+            </div>
+            <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200"
+              onClick={()=>{
+                signOut()
+              }}
+            >
+              <LiaSignOutAltSolid size={14} color="red"/>
+              <button className="text-red-500 ">Log Out</button>
+            </div>
+          </div>
+        }
       </div>
     );
   }
   return (
-    <button onClick={()=> signIn()} className="text-green-600 ml-auto">
+    <button onClick={()=> signIn()} className="text-white ml-auto px-6 bg-green-600 py-[7px] rounded-[2rem] hover:bg-green-700">
       Sign In
     </button>
   )
