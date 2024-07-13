@@ -50,7 +50,7 @@ function SignInButton() {
     );
   }
   return (
-    <button onClick={()=> signIn()} className="text-white ml-auto px-6 bg-green-600 py-[7px] rounded-[2rem] hover:bg-green-700">
+    <button onClick={()=> signIn()} className="text-white ml-auto px-6 bg-[#ffffff77] py-[7px] rounded-[2rem] hover:bg-[#ffffffa9]">
       Sign In
     </button>
   )
