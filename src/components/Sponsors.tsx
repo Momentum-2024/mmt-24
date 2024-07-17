@@ -8,7 +8,7 @@ function Sponsors() {
             <div className='flex justify-start text-white w-[90%] text-3xl font-semibold'>
                 <span>SPONSORED BY</span>
             </div>
-            <Image src="/Sponsors.svg" height={900} width={900} alt='sponsors'/>
+            <Image src="/Sponsors.svg" height={750} width={750} alt='sponsors'/>
         </div> 
     </>
   )

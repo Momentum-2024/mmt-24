@@ -14,6 +14,7 @@ function NavBar() {
         </Link>
         <Link href="/events" className='hover:font-normal cursor-pointer'>Events</Link>
         <Link href="/" className='hover:font-normal cursor-pointer'>Faqs</Link>
+        <Link href="/" className='hover:font-normal cursor-pointer'>Ambassador</Link>
         <SignInButton/>
       </div>
     </div>
