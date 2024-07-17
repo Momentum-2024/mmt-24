@@ -4,6 +4,7 @@ import Footer from './Footer'
 import About from './About'
 import TopEvents from './TopEvents'
 import Faqs from './Faqs'
+import Sponsors from './Sponsors'
 
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       <LandingPage/>
       <About/>
       <TopEvents/>
+      <Sponsors/>
       <Faqs/>
       <Footer/>
     </>

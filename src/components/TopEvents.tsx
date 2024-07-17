@@ -34,7 +34,7 @@ function TopEvents() {
       
       <div className='flex items-center justify-end -mt-96'>
         <Image src="/featured-2.svg" width={100} height={100} alt='' className='w-screen'/>
-        <button className='py-3 px-10 bg-gray-100 hover:bg-white absolute mr-20 text-xl rounded-[2rem] mb-10'>
+        <button className='py-3 px-10 bg-gray-200 hover:bg-white absolute mr-20 text-xl rounded-[2rem] mb-10'>
           SEE ALL
         </button>
       </div>
