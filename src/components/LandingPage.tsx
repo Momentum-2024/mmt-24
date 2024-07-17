@@ -6,7 +6,7 @@ import { FiYoutube } from 'react-icons/fi'
 function LandingPage() {
   return (
     <>
-      <div className="h-screen hero-bg flex items-center justify-center text-white">
+      <div className="h-screen w-screen hero-bg flex items-center justify-center text-white">
         <Image src="/2024-cursive.svg" alt="2024" height={0} width={950} className="absolute"/>
         <div className="absolute text-8xl heading-txt blur-sm">
           MOMENTUM
