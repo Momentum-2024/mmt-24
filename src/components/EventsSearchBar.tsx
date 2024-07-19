@@ -7,7 +7,7 @@ function EventsSearchBar({eventFilter, setEventFilter}) {
     const [drawerOpen, setDrawerOpen]= useState(false);
   return (
     <>
-        <div className='pt-[100px] sticky top-0 bg-[#030919] '>
+        <div className='pt-[100px] sticky top-0 '>
             <div className='flex items-center space-x-3 '>
                 <div className="w-[40%] bg-[#374151] h-11 flex items-center px-3 py-2 rounded-md">
                     <IoMdSearch size={25}/>

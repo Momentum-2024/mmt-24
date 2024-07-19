@@ -4,7 +4,7 @@ import React from 'react'
 
 function page({params}) {
   return (
-    <div className='events-bg min-h-screen'>
+    <div className='event-bg min-h-screen'>
       <div className=' text-black z-60 flex justify-around pb-8 items-start px-16 pt-[110px] h-full'>
         <div className='flex flex-col h-4/5 w-4/6 space-y-5 z-30 p-10 rounded-lg text-white bg-[#030919ae]'>
           <EventDetails/>
