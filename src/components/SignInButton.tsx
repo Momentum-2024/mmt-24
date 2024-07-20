@@ -3,6 +3,8 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { useState } from "react";
 import { LiaSignOutAltSolid } from "react-icons/lia";
 import { MdOutlineEmojiEvents } from "react-icons/md";
+import { IoMdPerson } from "react-icons/io";
+import Link from "next/link";
 
 function SignInButton() {
   const { data: session } = useSession();
@@ -30,12 +32,18 @@ function SignInButton() {
               setShow(false)
             }}
           >
-            <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200"
-
-            >
-              <MdOutlineEmojiEvents size={14}/>
-              <button >My Events</button> 
-            </div>
+            <Link href={"/users/profile"}>
+              <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200">
+                <IoMdPerson size={14}/>
+                <button >Profile</button> 
+              </div>
+            </Link>
+            <Link href={"/users/profile"}>
+              <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200">
+                <MdOutlineEmojiEvents size={14}/>
+                <button >My Events</button> 
+              </div>
+            </Link>
             <div className="flex  justify-start items-center px-3 py-1 space-x-3 rounded-md hover:bg-gray-200"
               onClick={()=>{
                 signOut()
