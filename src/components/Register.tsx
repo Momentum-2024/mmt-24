@@ -51,7 +51,22 @@ function Payment() {
               </div>
             </div>
             <div className=' w-4/6 p-3 text-sm font-light overflow-y-scroll h-[480px] overflow-x-hidden'>
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQT3eSIWkWOYcwMt37Gr4tvhWO45XKgLZAJlPZVZj5gU0Biw/viewform?embedded=true" width="640" height="1499" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              {
+                steps==0?
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQT3eSIWkWOYcwMt37Gr4tvhWO45XKgLZAJlPZVZj5gU0Biw/viewform?embedded=true" width="640" height="1499">Loading…</iframe>
+                :
+                (
+                  steps==1?
+                  <>Meow</>
+                  :
+                  (
+                    steps==2?
+                    <>meow ji meow</>
+                    :
+                    <></>
+                  )
+                )
+              }
             </div>
           </div>
         </div>
