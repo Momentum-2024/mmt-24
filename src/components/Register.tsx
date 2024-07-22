@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaAddressCard } from "react-icons/fa";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { MdPayments } from "react-icons/md";
+import Gateway from './Gateway';
 
 function Payment() {
   const [steps,setSteps]= useState(0);
@@ -45,10 +46,10 @@ function Payment() {
                   }
                 </div>
               </div>
-              <div className='self-end w-full flex gap-3 text-xs'>
+              {/* <div className='self-end w-full flex gap-3 text-xs'>
                 <button className='w-[50%] bg-white text-black py-3 rounded-md'>Previous</button>
                 <button className='w-[50%] bg-white text-black py-3 rounded-md'>Next</button>
-              </div>
+              </div> */}
             </div>
             <div className=' w-4/6 p-3 text-sm font-light overflow-y-scroll h-[480px] overflow-x-hidden'>
               {
@@ -57,7 +58,7 @@ function Payment() {
                 :
                 (
                   steps==1?
-                  <>Meow</>
+                  <Gateway/>
                   :
                   (
                     steps==2?

@@ -16,15 +16,15 @@ function EventDetails() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo corporis earum inventore dolorum vel, est natus nemo dolore praesentium veniam consequatur aperiam mollitia impedit dolores quae blanditiis magni illum tempora eius culpa! Temporibus velit non necessitatibus, laborum id deleniti sapiente reprehenderit iusto nesciunt nulla explicabo earum, neque iste. Consequuntur fugiat sed ullam laboriosam harum nam cumque perspiciatis illo labore molestias cum nihil voluptatem quos quaerat dignissimos est magni, iste voluptates omnis animi. Fuga, cum!
           </div>
           <div className='space-y-2'>
-            <div className='text-lg font-semibold flex items-center space-x-3'>
+            <div className='text-sm flex items-center space-x-3'>
               <MdDateRange size={15}/>
               <span>Date: 3rd November, 2024</span>
             </div>
-            <div className='text-lg font-semibold flex items-center space-x-3'>
+            <div className='text-sm flex items-center space-x-3'>
               <IoIosTime size={15}/>
               <span>Time: 12:00 PM</span>
             </div>
-            <div className='text-lg font-semibold flex items-center space-x-3'>
+            <div className='text-sm flex items-center space-x-3'>
               <FaLocationDot size={15}/>
               <span>Venue: RN 117</span>
             </div>
@@ -53,7 +53,7 @@ function EventDetails() {
             <div className=' text-sm'>
                 <ul className='ml-10 ' style={
                 {
-                    "list-style-type":"disc"
+                  "listStyleType":"disc"
                 }
                 } >
                 <li>Rule 1</li>
