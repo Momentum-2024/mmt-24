@@ -6,7 +6,7 @@
 
 
 .hero-bg{
-    background: url("/hero.svg");
+    background: url("/hero-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

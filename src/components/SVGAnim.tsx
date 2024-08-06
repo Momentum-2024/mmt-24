@@ -4,7 +4,7 @@ import React from 'react'
 function SVGAnim() {
   return (
     <>
-        <svg width="1000" height="272" viewBox="0 0 1232 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="950" height="272" viewBox="0 0 1232 272" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path 
                 stroke="white" 
                 stroke-width="3" 
