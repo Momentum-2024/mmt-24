@@ -22,13 +22,13 @@ function LandingPage() {
     <>
       <div className="h-screen w-screen hero-bg flex items-center justify-center text-white">
         <SVGAnim></SVGAnim>
-        <div className="absolute text-8xl heading-txt blur-sm hero-head-anim">
+        <div className="absolute text-5xl xl:text-8xl heading-txt blur-sm hero-head-anim">
           MOMENTUM
         </div>
-        <div className="absolute text-8xl heading-txt hero-head-anim">
+        <div className="absolute text-5xl xl:text-8xl heading-txt hero-head-anim">
           MOMENTUM
         </div>
-        <div className="h-32 w-14 bg-white fixed end-0 flex flex-col rounded-l-md items-center justify-evenly z-50">
+        <div className="h-32 w-14 hidden bg-white fixed end-0 xl:flex flex-col rounded-l-md items-center justify-evenly z-50">
           <FaInstagram size={27} color="black"/>
           <FiYoutube size={27} color="black"/>
         </div>

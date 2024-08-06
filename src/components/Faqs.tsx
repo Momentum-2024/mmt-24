@@ -38,18 +38,18 @@ function Faqs() {
       ];
       const [toggle, setToggle]= useState(null);
   return (
-    <div className='z-40 bg-gradient-to-b from-[#030919] to-[#020015] w-screen flex justify-center items-center px-20 pb-10 -mt-2'>
-      <div className='flex w-full text-white  justify-around space-x-4 z-30'>
+    <div className='z-40 bg-gradient-to-b from-[#030919] to-[#020015] w-screen flex justify-center items-center px-5 xl:px-20 pb-10 -mt-2 py-10'>
+      <div className='flex w-full text-white justify-around space-x-4 z-30'>
         <FaqImage/>
-        <div className='w-2/5 flex flex-col space-y-3'>
-            <div className='space-x-2 text-3xl font-semibold w-full'>
-                FAQs
+        <div className='xl:w-2/5 flex flex-col space-y-3'>
+            <div className='space-x-2 text-lg xl:text-3xl font-semibold w-full'>
+              FAQs
             </div>
-            <div className='py-2 space-y-4'>
+            <div className='py-2 xl:space-y-4 space-y-2'>
                 {
                     faqs.map((element, key)=>{
                         return (
-                            <Faq key={key} element={element} toggle={toggle} setToggle={setToggle} index={key}/>
+                          <Faq key={key} element={element} toggle={toggle} setToggle={setToggle} index={key}/>
                         )
                     })
                 }

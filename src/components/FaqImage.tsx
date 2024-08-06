@@ -20,7 +20,7 @@ function FaqImage() {
         )
     },[])
     return (
-        <div className='mt-10'>
+        <div className='mt-10 hidden xl:block'>
             <Image src="/Q-mark.svg" height={250} width={250} alt='?' className='q-mark'></Image>
         </div>
     )

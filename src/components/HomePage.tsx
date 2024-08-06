@@ -8,14 +8,14 @@ import Sponsors from './Sponsors'
 
 function HomePage() {
   return (
-    <>
+    <div className='h-screen w-screen bg-red-300'>
       <LandingPage/>
       <About/>
       <TopEvents/>
       {/* <Sponsors/> */}
       <Faqs/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
