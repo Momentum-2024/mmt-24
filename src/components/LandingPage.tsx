@@ -1,13 +1,20 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 import { FiYoutube } from 'react-icons/fi'
+import SVGAnim from './SVGAnim'
 
 function LandingPage() {
+  // useEffect(()=>{
+  //   let a=window.document.querySelectorAll("#hero-svg-path")
+  //   console.log(a[0].getTotalLength());
+    
+  // },[])
   return (
     <>
       <div className="h-screen w-screen hero-bg flex items-center justify-center text-white">
-        <Image src="/2024-cursive.svg" alt="2024" height={0} width={950} className="absolute"/>
+        <SVGAnim></SVGAnim>
         <div className="absolute text-8xl heading-txt blur-sm">
           MOMENTUM
         </div>

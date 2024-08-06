@@ -101,3 +101,19 @@ body{
     transition: transform 150ms ease-in-out;
     opacity: 100ms ease-in-out;
 }
+
+/* ------------------------------------------------- Landing Page SVG Animation ------------------------------------------------- */
+
+#hero-svg-path{
+    stroke-dasharray: 6743;
+    stroke-dashoffset: 6743;
+    /* stroke-dasharray: 50px; */
+    animation: line-anim 17s ease forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+
+}
