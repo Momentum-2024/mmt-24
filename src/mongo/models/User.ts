@@ -6,9 +6,37 @@ const userModel= mongoose.Schema(
             type: String,
             isRequired: true
         },
+        email:{
+            type: String,
+            isRequired: true,
+            unique: true
+        },
+        createdAt:{
+            type: Date,
+            default: Date.now()
+        },
+        modifiedAt:{
+            type: Date,
+        },
+        role:{
+            default: "particpant"
+        },
+        tag:{
+
+        },
+        campusAmbassador:{
+            type: Object,
+            default: {
+                "applied": false,
+                "count": 0,
+            }
+        },
+        pNumber:{
+            type: Number
+        },
         events:[
             {
-                type: Object,
+                type: Array,
             },
         ],
     }

@@ -2,13 +2,13 @@
 import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
 
-function Faq({element}) {
-    const [toggle, setToggle]= useState(false);
+function Faq({element, toggle, setToggle, index}) {
+    
   return (
     <>
         <div className='space-y-2 bg-white text-black rounded-[1.3rem] px-5 py-3 cursor-pointer'
             onClick={()=>{
-                setToggle(!toggle);
+                setToggle(index);
             }}
         >
             <div className='text-lg flex items-center justify-between' >
@@ -19,13 +19,13 @@ function Faq({element}) {
             }/></span>
             </div>
             {
-                toggle && 
-                <>
+                toggle==index && 
+                <div className='faq-content space-y-2'>
                     <hr />
                     <div className='text-sm'>
                         {element.ans}
                     </div>
-                </>
+                </div>
             }
         </div>
     </>

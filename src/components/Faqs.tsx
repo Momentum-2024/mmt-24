@@ -1,6 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
+'use client'
+import { useState } from 'react';
 import Faq from './Faq';
+import FaqImage from './FaqImage';
 
 function Faqs() {
     const faqs = [
@@ -35,10 +36,11 @@ function Faqs() {
           ans: "Yes, there will be a variety of food stalls available at the fest.",
         },
       ];
+      const [toggle, setToggle]= useState(null);
   return (
     <div className='z-40 bg-gradient-to-b from-[#030919] to-[#020015] w-screen flex justify-center items-center px-20 pb-10 -mt-2'>
-      <div className='flex w-full text-white items-center justify-around space-x-4 z-30'>
-        <Image src="/Q-mark.svg" height={250} width={250} alt='?' className=''></Image>
+      <div className='flex w-full text-white  justify-around space-x-4 z-30'>
+        <FaqImage/>
         <div className='w-2/5 flex flex-col space-y-3'>
             <div className='space-x-2 text-3xl font-semibold w-full'>
                 FAQs
@@ -47,7 +49,7 @@ function Faqs() {
                 {
                     faqs.map((element, key)=>{
                         return (
-                            <Faq key={key} element={element}/>
+                            <Faq key={key} element={element} toggle={toggle} setToggle={setToggle} index={key}/>
                         )
                     })
                 }

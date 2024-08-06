@@ -87,3 +87,17 @@ body{
 .event-card:hover{
     box-shadow: 7px 12px #ba37ff;
 }
+
+.bg-404{
+    background: url("/bg-404.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #030919;
+    filter: blur(2px);
+}
+
+.faq-content{
+    transform: translateY(-5%);
+    transition: transform 150ms ease-in-out;
+    opacity: 100ms ease-in-out;
+}

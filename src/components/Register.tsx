@@ -51,10 +51,10 @@ function Payment() {
                 <button className='w-[50%] bg-white text-black py-3 rounded-md'>Next</button>
               </div> */}
             </div>
-            <div className=' w-4/6 p-3 text-sm font-light overflow-y-scroll h-[480px] overflow-x-hidden'>
+            <div className='w-4/6 text-sm font-light h-[480px] overflow-x-hidden ml-7'>
               {
                 steps==0?
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQT3eSIWkWOYcwMt37Gr4tvhWO45XKgLZAJlPZVZj5gU0Biw/viewform?embedded=true" width="640" height="1499">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQT3eSIWkWOYcwMt37Gr4tvhWO45XKgLZAJlPZVZj5gU0Biw/viewform?embedded=true" width="640" height="480" >Loading…</iframe>
                 :
                 (
                   steps==1?

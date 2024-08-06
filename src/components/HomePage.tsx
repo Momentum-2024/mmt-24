@@ -12,7 +12,7 @@ function HomePage() {
       <LandingPage/>
       <About/>
       <TopEvents/>
-      <Sponsors/>
+      {/* <Sponsors/> */}
       <Faqs/>
       <Footer/>
     </>
