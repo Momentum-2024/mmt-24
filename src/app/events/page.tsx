@@ -16,7 +16,7 @@ export default function Events({ }) {
   const router= useRouter();
 
   useEffect(()=>{
-    router.push("/page-not-found");
+    // router.push("/page-not-found");
   },[])
   
   return (
