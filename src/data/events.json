@@ -2481,7 +2481,7 @@
         "fee": 100,
         "amount": "",
         "teamSize": "Solo",
-        "closed": false,
+        "closed": false,    
         "desc": "Participants take penalty shots to score goals from a designated distance. The player with  the most goals will be declared the winner. Registration: Participants must register individually for the penalty shootout competition. Shots: Each participant will be given 10 penalty shots, taken from a distance of 15 meters from the goal post. Scoring: The participant with the highest number of goals out of 10 shots will be declared the winner.",
         "criteria": [
             "Total Goals:The participant with the highest number of goals scored out of 10 shots will be declared the winner."
